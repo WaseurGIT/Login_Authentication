@@ -21,7 +21,7 @@ const Login = () => {
     axios.post("http://localhost:5000/login", loginData).then((response) => {
       if (response.data.token) {
         localStorage.setItem("token", response.data.token);
-        navigate("/");
+        navigate("/profile");
       } else {
         alert("Login failed");
       }

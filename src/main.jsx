@@ -7,6 +7,7 @@ import Login from "./Login.jsx";
 import Profile from "./Profile.jsx";
 import Register from "./Register.jsx";
 import React from "react";
+import EditProfile from "./EditProfile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <Profile />,
       },
+      {
+        path: '/editProfile',
+        element: <EditProfile />
+      }
     ],
   },
 ]);

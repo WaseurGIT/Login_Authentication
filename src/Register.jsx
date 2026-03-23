@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
 import axiosSecure from "./axiosSecure";
@@ -28,6 +28,7 @@ const Register = () => {
       name,
       email,
       password,
+      createdAt: new Date().toLocaleString(),
     };
 
     axiosSecure
